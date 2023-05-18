@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamin Bassett</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/ben.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/ben.png"
+              alt="Benjamin Bassett"
+              width="80"
+              style="border-radius: 15%"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Benjamin Bassett">Benjamin Bassett</h1>
+
+            <p class="title">Lifelong learner</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:benwillie@icloud.com" class="contact-link"
+                  >benwillie@icloud.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+18607763632" class="contact-link"
+                  >+1 (860) 776-3632</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2005-06-20">June 20, 2005</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Tolland, CT, USA</address>
+              </div>
+            </li>
+          </ul>
+
+          <!-- <div class="separator"></div> -->
+          <!---->
+          <!-- <ul class="social-list"> -->
+          <!--   <li class="social-item"> -->
+          <!--     <a href="#" class="social-link"> -->
+          <!--       <ion-icon name="logo-facebook"></ion-icon> -->
+          <!--     </a> -->
+          <!--   </li> -->
+          <!---->
+          <!--   <li class="social-item"> -->
+          <!--     <a href="#" class="social-link"> -->
+          <!--       <ion-icon name="logo-twitter"></ion-icon> -->
+          <!--     </a> -->
+          <!--   </li> -->
+          <!---->
+          <!--   <li class="social-item"> -->
+          <!--     <a href="#" class="social-link"> -->
+          <!--       <ion-icon name="logo-instagram"></ion-icon> -->
+          <!--     </a> -->
+          <!--   </li> -->
+          <!-- </ul> -->
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="https://links.benbassett.dev/" target="_blank"
+                >Find Me</a
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="https://blog.benbassett.dev/" target="_blank"
+                >Blog</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hi!
+            </p>
+
+            <p>
+              I'm Ben Bassett, hailing from Tolland, Connecticut.
+              I'm working in web development while pursuing my further 
+              education. I enjoy finding definitively elegant solutions to 
+              complex problems and incorportant these into simple, 
+              beautiful and intuitive designs.
+            </p>
+
+            <p>
+              While I don't know everything, I'm passionate about what I do, and
+              am always willing to learn a new skill or tackle an unfamiliar
+              challenge.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Up To</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="school-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Education</h4>
+
+                  <p class="service-item-text">
+                    Currently enrolled as a full-time student at 
+                    <a href="https://www.hillsdale.edu" target="_blank">Hillsdale College</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Development</h4>
+
+                  <p class="service-item-text">
+                     Freelance software development and open-source contribution
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="musical-notes-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Music</h4>
+
+                  <p class="service-item-text">
+                    Pianist with 10+ years of experience and recently budding guitarist
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Reading</h4>
+
+                  <p class="service-item-text">
+                    Voracious bibliophile, reviewing all the
+                    literature I consume on <a href="https://www.goodreads.com/benwillie" target="_blank">Goodreads</a>
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="mic-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Podcasting</h4>
+
+                  <p class="service-item-text">
+                    Hosts a podcast with two friends called
+                    <a href="https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect">Rhetoric in Retrospect</a>
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="icon">
+                  <ion-icon name="radio-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">A/V Work</h4>
+
+                  <p class="service-item-text">
+                    Employed to manage audio/visual needs at 
+                    <a href="https://coventrypca.church" target="_blank">local church</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.jpg"
+                      alt="Labin Duke"
+                      width="60"
+                      style="border-radius: 15%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Labin Duke
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.jpg"
+                      alt="Eleanor Georges"
+                      width="60"
+                      style="border-radius: 15%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Eleanor Georges
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.jpg"
+                      alt="Christian Dancy"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Christian Dancy
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      When it comes to Benjamin Bassett you will find very
+                      few students with the skillset, understanding, passion,
+                      and most importantly work ethic that he has toward 
+                      learning. Ben has a desire to know Gods creation in as 
+                      many ways as possible and works diligently studying to 
+                      learn as much as possible about the world we live in 
+                      and its many aspects.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-5.jpg"
+                      alt="Jayson Wilbur"
+                      width="60"
+                      style="border-radius: 15%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jayson Wilbur
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.jpg"
+                      alt="Richard Jones"
+                      width="60"
+                      style="border-radius: 15%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Richard Jones
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+
+                <time datetime="2023-05-17">May 17, 2023</time>
+
+                <div data-modal-text>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="clients">
+            <h3 class="h3 clients-title">My Work</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://coventrypca.church" target="_blank">
+                  <img
+                    style="height: 100px; width: 100px; margin: auto"
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.hillsdale.edu" target="_blank">
+                  <img
+                    style="height: 30px; width:183px; margin-top: 40px; margin-bottom: 40px; margin-left: auto; margin-right: auto;"
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://www.github.com/benonymity" target="_blank">
+                  <img
+                    style="height: 26px; width:100px; margin-top: 40px; margin-bottom: 40px; margin-left: auto; margin-right: auto;"
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Hillsdale College</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Currently enrolled as a full-time student at 
+                  <a href="https://www.hillsdale.edu" target="_blank">Hillsdale College</a>.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Classical Conversations</h4>
+
+                <span>2011 — 2023</span>
+
+                <p class="timeline-text">
+                Homeschooled via the <a href="https://www.classicalconversations.com" target="_blank">Classical Conversations</a> 
+                curriculum from kindergarten through the end of high school.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Intern</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Summer internship at <a href="https://blakecenter.hillsdale.edu" target="_blank">
+                  The Blake Center for Faith and Freedom</a>,
+                  involving groundskeeping, website design, equipment repair,
+                  and event coordination.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Media Coordinator</h4>
+
+                <span>2021 — 2023</span>
+
+                <p class="timeline-text">
+                  Media Coordinator for the <a href="https://coventrypca.church/about/our-leaders" target="_blank">Presbyterian Church of Coventry</a>.
+                  Responsibilities including website management, designing 
+                  automation piplines, and A/V equiment supervision/upgrading.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Open-Source Development</h4>
+
+                <span>2020 — Present</span>
+
+                <p class="timeline-text">
+                  <a href="https://www.github.com/benonymity" target="_blank">Contributes</a> 
+                  to open-source software, develops applications for personal use, 
+                  and designed, built, and maintains enterprise-grade homelab + 
+                  network that hosts over 90 services.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Proficiencies</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Vue</h5>
+                  <data value="70">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Go</h5>
+                  <data value="90">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Docker</h5>
+                  <data value="50">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <!-- <ul class="filter-list"> -->
+            <!--   <li class="filter-item"> -->
+            <!--     <button class="active" data-filter-btn>All</button> -->
+            <!--   </li> -->
+            <!---->
+            <!--   <li class="filter-item"> -->
+            <!--     <button data-filter-btn>Web design</button> -->
+            <!--   </li> -->
+            <!---->
+            <!--   <li class="filter-item"> -->
+            <!--     <button data-filter-btn>Applications</button> -->
+            <!--   </li> -->
+            <!---->
+            <!--   <li class="filter-item"> -->
+            <!--     <button data-filter-btn>Web development</button> -->
+            <!--   </li> -->
+            <!-- </ul> -->
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://coventrypca.church" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="pcc-website"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Presbyterian Church of Coventry</h3>
+
+                  <p class="project-category">Web Maintainace</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://blakecenter.hillsdale.edu/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.jpg"
+                      alt="blake-center"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Blake Center</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/advplyr/audiobookshelf-app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="audiobookshelf"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Audiobookshelf</h3>
+
+                  <p class="project-category">Open Source Contribution</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://github.com/benonymity/spotify-buddylist" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.jpg"
+                      alt="spotify-buddylist"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Spotify Buddylist</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/benonymity/ShakespeareStats" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.jpg"
+                      alt="shakespeare-stats"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Shakespeare Statistics</h3>
+
+                  <p class="project-category">Python Programming</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/benonymity/littlelink-server" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.jpg"
+                      alt="littlelink"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Littlelink Server</h3>
+
+                  <p class="project-category">Open Source Contribution</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Presbyterian-Church-of-Coventry/sermon-api" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.jpg"
+                      alt="sermon-upload"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Upload Automation</h3>
+
+                  <p class="project-category">Full-Stack Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://www.benbassett.dev" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="portfolio-site"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Personal Portfolio</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/benonymity/BeFake" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.jpg"
+                      alt="befake"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">BeFake</h3>
+
+                  <p class="project-category">Open Source Contribution</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95062.40784442106!2d-72.44354216698476!3d41.87779531833269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6f35d88939d8d%3A0x3b59035b904c52f6!2sTolland%2C%20CT%2006084!5e0!3m2!1sen!2sus!4v1684351063691!5m2!1sen!2sus"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://mailthis.to/benwillie@icloud.com" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

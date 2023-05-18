@@ -1,0 +1,3 @@
+# Personal Website
+
+Huge thanks to all the groundwork for this site laid by the [vcard-portfolio-website](https://github.com/codewithsadee/vcard-personal-portfolio) repository! I've made a bunch of modifications, and will soon be hosting this on my own domain. I'll probably regret going with a barebones SPA, but oh well...
