@@ -206,17 +206,16 @@ article {
 
 .icon {
   position: relative;
-  height: auto;
-  border-radius: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
   font-size: 40px;
   color: var(--orange-yellow-crayola);
   z-index: 1;
 }
 
 .icon ion-icon {
+  flex: 2;
 }
 
 .icon-box::before {
@@ -596,7 +595,56 @@ main {
 }
 
 .service-item-title {
-  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.download {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.download .download-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.download .download-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.download:hover .download-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.download ion-icon {
+  color: white;
+  cursor: pointer;
 }
 
 .service-item-text {
@@ -821,18 +869,23 @@ main {
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: calc(43.33%);
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: auto;
+  height: auto;
+  max-height: 105px;
+  filter: invert(0.5);
   transition: var(--transition-1);
 }
 
 .clients-item img:hover {
-  filter: grayscale(0);
+  filter: invert(0);
 }
 
 /*-----------------------------------*\
@@ -1529,10 +1582,18 @@ textarea.form-input::-webkit-resizer {
 
   .service-item {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 18px;
     padding: 30px;
+    padding-top: 20px;
+  }
+
+  .service-item-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-start;
   }
 
   .service-icon-box {
@@ -1897,7 +1958,7 @@ textarea.form-input::-webkit-resizer {
   /* clients */
 
   .clients-item {
-    min-width: calc(25% - 38px);
+    /* min-width: calc(25% - 38px); */
   }
 
   /**
@@ -2028,8 +2089,8 @@ textarea.form-input::-webkit-resizer {
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
   }
 
   .contact-info :is(.contact-link, time, address) {
