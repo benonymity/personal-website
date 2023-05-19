@@ -206,8 +206,7 @@ article {
 
 .icon {
   position: relative;
-  width: 60px;
-  height: 60px;
+  height: auto;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -215,6 +214,9 @@ article {
   font-size: 40px;
   color: var(--orange-yellow-crayola);
   z-index: 1;
+}
+
+.icon ion-icon {
 }
 
 .icon-box::before {
