@@ -1,0 +1,74 @@
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-direction: row;
+  position: center;
+  width: 100%;
+  float: center;
+  box-sizing: border-box;
+}
+.box-shadow-medium {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 0;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+}
+.button {
+  background-color: var(--bg-color);
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 400;
+  font-family: "OpenSansBold";
+  color: var(--font-color);
+  transition: 0.25s ease;
+  visibility: visible;
+}
+.button:before {
+  visibility: hidden;
+  background: transparent;
+}
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("opensans/bold.ttf");
+}
+@media (min-width: 550px) {
+  .title-name {
+    font-size: 48px;
+    line-height: 96px;
+  }
+}
+.button {
+  color: var(--a-color);
+}
+.button:hover {
+  color: var(--a-color);
+}
+.button {
+  margin-bottom: 1rem;
+}
+.button.button-devto,
+.button.button-ghost,
+.button.button-gitea,
+.button.button-gitlab,
+.button.button-signal,
+.button.button-stackoverflow {
+  border-style: var(--button-border-style);
+  border-color: var(--border-color);
+  border-width: 1px;
+}
