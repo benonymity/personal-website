@@ -698,6 +698,10 @@ main {
   margin-bottom: 7px;
 }
 
+.testimonials-item-subtitle {
+  margin-bottom: 7px;
+}
+
 .testimonials-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1622,6 +1626,11 @@ textarea.form-input::-webkit-resizer {
   }
 
   .testimonials-item-title {
+    margin-bottom: 10px;
+    margin-left: 95px;
+  }
+
+  .testimonials-item-subtitle {
     margin-bottom: 10px;
     margin-left: 95px;
   }

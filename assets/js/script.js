@@ -39,6 +39,9 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalTitle.innerHTML = this.querySelector(
       "[data-testimonials-title]"
     ).innerHTML;
+    // modalTitle.innerHTML = this.querySelector(
+    //   "[data-testimonials-subtitle]"
+    // ).innerHTML;
     modalText.innerHTML = this.querySelector(
       "[data-testimonials-text]"
     ).innerHTML;
