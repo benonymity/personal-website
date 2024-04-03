@@ -37,13 +37,13 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector(
-      "[data-testimonials-title]"
+      "[data-testimonials-title]",
     ).innerHTML;
     // modalTitle.innerHTML = this.querySelector(
     //   "[data-testimonials-subtitle]"
     // ).innerHTML;
     modalText.innerHTML = this.querySelector(
-      "[data-testimonials-text]"
+      "[data-testimonials-text]",
     ).innerHTML;
 
     testimonialsModalFunc();
@@ -129,7 +129,10 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+      if (
+        this.innerHTML.replace(/\n\s+/g, "").toLowerCase() ===
+        pages[i].dataset.page
+      ) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
