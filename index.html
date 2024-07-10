@@ -12,11 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script
-      async
-      src="https://umami.blazenetworking.com/script.js"
-      data-website-id="5e1aa497-2035-4994-929c-8204b452d1a1"
-    ></script>
   </head>
 
   <body>
@@ -1527,6 +1522,18 @@
       </div>
     </main>
     <script src="./assets/js/script.js"></script>
+    <script>
+      if (window.location.hostname.includes("benbassett.dev")) {
+        var script = document.createElement("script");
+        script.async = true;
+        script.src = "https://umami.blazenetworking.com/script.js";
+        script.setAttribute(
+          "data-website-id",
+          "5e1aa497-2035-4994-929c-8204b452d1a1",
+        );
+        document.head.appendChild(script);
+      }
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
