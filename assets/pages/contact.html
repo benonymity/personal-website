@@ -1,0 +1,67 @@
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src=""
+        width="400"
+        height="300"
+        loading="lazy"
+        id="map-iframe"
+      ></iframe>
+    </figure>
+  </section>
+
+  <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      class="form"
+      data-form
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="e0380ae5-1b38-402e-a9cb-3c0bd56097b3"
+      />
+
+      <div class="input-wrapper">
+        <input
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Full name"
+          required
+          data-form-input
+        />
+
+        <input
+          type="email"
+          name="email"
+          class="form-input"
+          placeholder="Email address"
+          required
+          data-form-input
+        />
+      </div>
+
+      <textarea
+        name="message"
+        class="form-input"
+        placeholder="Your Message"
+        required
+        data-form-input
+      ></textarea>
+
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>

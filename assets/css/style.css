@@ -220,7 +220,8 @@ article {
 }
 
 article {
-  display: none;
+  display: block;
+  animation: fade 0.5s ease backwards;
 }
 
 article.active {
@@ -330,6 +331,12 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
+
+#sidebar-placeholder {
+  /* width: fit-content; */
+  height: fit-content;
+  /* overflow: hidden; */
+}
 
 .sidebar {
   margin-bottom: 15px;
@@ -1395,6 +1402,126 @@ textarea.form-input::-webkit-resizer {
 }
 
 /*-----------------------------------*\
+  404
+\*-----------------------------------*/
+
+/* .not-found {
+  padding: 20px;
+} */
+
+.not-found .article-title {
+  margin-bottom: 30px;
+}
+
+.not-found-content {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.not-found-content p {
+  margin-bottom: 15px;
+}
+
+.not-found-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.not-found-content ul li {
+  margin-bottom: 10px;
+}
+
+.not-found-content a {
+  color: var(--orange-yellow-crayola);
+  transition: color var(--transition-1);
+}
+
+.not-found-content a:hover,
+.not-found-content a:focus {
+  color: var(--light-gray-70);
+}
+
+.not-found-image {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.not-found-image img {
+  width: 100%;
+  height: auto;
+}
+
+#word-search {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  background-color: #f9f9f9;
+  user-select: none;
+}
+
+#word-search table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensure equal width columns */
+}
+
+#word-search td {
+  border: 1px solid #ddd;
+  /* height: 2px; */
+  width: 10%; /* Set a fixed width for each cell (100% / 10 columns) */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color var(--transition-1), color var(--transition-1);
+  user-select: none;
+  padding: 0; /* Remove any padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#word-search td.selected {
+  background-color: #4caf50; /* Green background for selected cells */
+  color: #fff; /* White text for better contrast */
+}
+
+#selection-area {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selected-letters {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#go-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: rgb(255, 219, 112);
+  color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: var(--transition-1);
+  visibility: hidden;
+}
+
+#go-button ion-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#go-button:hover {
+  background-color: rgb(135, 115, 53);
+}
+
+/*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
 
@@ -1759,6 +1886,15 @@ textarea.form-input::-webkit-resizer {
   .form-btn ion-icon {
     font-size: 18px;
   }
+
+  #word-search {
+    max-width: 600px;
+  }
+
+  #word-search td:hover {
+    background-color: #555;
+    color: #fff;
+  }
 }
 
 /**
@@ -1996,8 +2132,7 @@ textarea.form-input::-webkit-resizer {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
-    box-shadow:
-      inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
