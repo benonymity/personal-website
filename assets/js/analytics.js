@@ -4,14 +4,14 @@ if (window.location.hostname.includes("benbassett.dev")) {
   script.src = "https://umami.blazenetworking.com/script.js";
   script.setAttribute(
     "data-website-id",
-    "5e1aa497-2035-4994-929c-8204b452d1a1"
+    "5e1aa497-2035-4994-929c-8204b452d1a1",
   );
   document.head.appendChild(script);
 
   // Add data-umami-event attribute to clickable elements
   function addUmamiEventAttributes() {
     const clickableElements = document.querySelectorAll(
-      'a, button, [role="button"], input[type="submit"], input[type="button"]'
+      'a, button, [role="button"], input[type="submit"], input[type="button"]',
     );
 
     clickableElements.forEach((element) => {

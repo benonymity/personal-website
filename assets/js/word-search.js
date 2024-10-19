@@ -39,12 +39,19 @@ function displayGrid() {
   }
   container.appendChild(table);
 
-  // Ensure squares are actually square
+  // Call resizeGrid initially and add event listener for window resize
+  resizeGrid();
+  window.addEventListener("resize", resizeGrid);
+}
+
+function resizeGrid() {
   const wordSearch = document.getElementById("word-search");
+  const table = wordSearch.querySelector("table");
   const wordSearchWidth = wordSearch.offsetWidth;
-  wordSearch.style.height = `${wordSearchWidth - 5}px`; // Subtract 5 pixels from the height
+  wordSearch.style.height = `${wordSearchWidth}px`; // Set height equal to width
   const cells = table.getElementsByTagName("td");
-  const cellSize = (wordSearchWidth - 11) / size; // Adjust cellSize calculation
+  const size = Math.sqrt(cells.length);
+  const cellSize = wordSearchWidth / size; // Adjust cellSize calculation
   for (let cell of cells) {
     cell.style.width = `${cellSize}px`;
     cell.style.height = `${cellSize}px`;
@@ -71,7 +78,7 @@ function navigateToLink() {
   const link = document
     .getElementById("selected-letters")
     .textContent.toLowerCase();
-  window.location.href = `/${link}`; // Modify this line to fit your URL structure
+  window.location.href = `https://${link}.benbassett.dev`; // Navigate to the subdomain
 }
 
 document.getElementById("go-button").style.visibility = "hidden";
@@ -79,3 +86,7 @@ document.getElementById("go-button").addEventListener("click", navigateToLink);
 
 // Call displayGrid to show a random word search grid when the page loads or when needed
 displayGrid();
+
+// Call resizeGrid on window load and resize events
+window.addEventListener("load", resizeGrid);
+window.addEventListener("resize", resizeGrid);

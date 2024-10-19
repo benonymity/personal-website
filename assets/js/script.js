@@ -20,7 +20,7 @@ function runAllOperations() {
 
   // testimonials variables
   const testimonialsItem = document.querySelectorAll(
-    "[data-testimonials-item]"
+    "[data-testimonials-item]",
   );
   const modalContainer = document.querySelector("[data-modal-container]");
   const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -43,10 +43,10 @@ function runAllOperations() {
       modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
       modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
       modalTitle.innerHTML = this.querySelector(
-        "[data-testimonials-title]"
+        "[data-testimonials-title]",
       ).innerHTML;
       modalText.innerHTML = this.querySelector(
-        "[data-testimonials-text]"
+        "[data-testimonials-text]",
       ).innerHTML;
       testimonialsModalFunc();
     });
