@@ -1,0 +1,320 @@
+cv:
+  name: Benjamin Bassett
+  location: Tolland, CT
+  email: ben@benbassett.dev
+  phone: tel:+1 860 776 3632
+  website: https://benbassett.dev/
+  social_networks:
+    - network: LinkedIn
+      username: benbassettdev
+    - network: GitHub
+      username: benonymity
+    - network: ORCID
+      username: 0009-0009-2609-2445
+  sections:
+    education:
+      - institution: Hillsdale College
+        area: Physics and Mathematics, Minor in Computer Science
+        start_date: 2023-07
+        end_date: 2027-05
+        date: 2023 — Present
+        degree: BS
+        highlights:
+          - "Currently enrolled as a full-time undergraduate student at [Hillsdale College](https://www.hillsdale.edu/)."
+          - "Pursuing well-rounded education in the liberal arts and sciences, while making life-long friends and memories."
+          - "Developing skills in advanced mathematics, physics, programming, research, and scientific computing"
+      - institution: Classical Conversations
+        area: High School
+        date: 2011 — 2023
+        highlights:
+          - "Graduate of [Classical Conversations](https://classicalconversations.com/), a rigorous homeschool program built on the classical education model."
+          - "Studied the liberal arts and sciences like debate, literature, philosophy, and mathematics ([Transcript](https://benbassett.dev/assets/files/cc_transcript.pdf))."
+          - "Completed comprehensive curriculum and participated in Mock Trial, Science Fair, and [Senior Thesis](https://benbassett.dev/assets/files/senior_thesis.pdf)."
+      - institution: Teenpact Leadership Schools
+        area: Leadership Development Camp
+        date: 2013 — 2022
+        highlights:
+          - "9-year [Teenpact](https://teenpact.com/) participant, learning government principles and interacting with legislators."
+          - "Elected as one of three senators from a competitive class of 50 in 2022."
+          - "Consistently ranked top of class, excelling in leadership, public speaking, and policy understanding."
+    research_experience:
+      - company: Hillsdale College
+        position: Summer Researcher
+        location: Remote
+        date: Summer 2024
+        highlights:
+          - "Conducted pulsar data research through Hillsdale's [LAUREATES](https://www.hillsdale.edu/hillsdale-blog/academics/what-is-laureates-and-how-do-i-apply/) program, developing [processing software](https://github.com/benonymity/pulsar-search)."
+          - "Presented research at [NANOGrav](https://nanograv.org/)'s Fall 2024 Meeting to collaboration members."
+          - "Developed and refined a novel analysis GUI based on feedback from astrophysicists."
+        title: Summer Research
+      - company: Hillsdale College
+        position: Research Assistant
+        location: Hillsdale, MI
+        start_date: 2024-02
+        end_date: 2024-06
+        highlights:
+          - "Novel analysis of MyOne Dynabead movement using a [custom Python application](https://github.com/benonymity/dynabeads)."
+          - "Calculation of magnetic moment through bulk processing of microscope recordings."
+          - "Learned Matlab and Mathematica analysis, OpenCV, graphing, automation, and troubleshooting."
+      - company: NANOStars
+        position: Research Assistant
+        location: Hillsdale, MI
+        date: 2023—Present
+        highlights:
+          - "Reviewed, classified, and analyzed hundreds of reprocessed pulsar candidates from GBT and Parkes."
+          - "Participated in the [D-LITE](https://olivia-r-young.github.io/) radio telescope construction and solar eclipse observations."
+          - "Attended inter-university [NANOStars](https://nanograv.org/resources/resources-undergraduates) telecons, discussing relevant physics and astronomy topics."
+    teaching_experience:
+      - company: Hillsdale College
+        position: Teaching Assistant
+        date: Summer 2024
+        highlights:
+          - "Assisted with physics lab setup and instruction at Hillsdale College's [Summer Science Camp](https://www.hillsdale.edu/admissions-aid/high-school-study/summer-science-camps/)."
+          - "Conducted evening recitations, preparing materials to review content and addressing student questions."
+          - "Served as a resident assistant, supporting students throughout the summer camp experience."
+      - company: Hillsdale College
+        position: Private Mathematics Tutor
+        date: August 2024 — Present
+        highlights:
+          - "Mathematics tutor for Calculus I and II, helping students understand and apply advanced concepts."
+    working_experience:
+      - company: Hillsdale College
+        position: Audio/Visual Event Assistant
+        location: Hillsdale, MI
+        date: October 2024 — Present
+        highlights:
+          - "Assisted with planning, setup, and coordination for large events, including sound, lighting, and transport."
+          - "Operated soundboards and light boards, managed speaker communication, and worked with team schedules."
+          - "Provided general event support, ensuring smooth execution of various conferences and campus activities."
+      - company: "[Llmzy](https://llmzy.ai/)"
+        position: Summer Intern
+        location: Remote
+        date: Summer 2024
+        highlights:
+          - "Designed backend, tests, and tooling for next-gen agent-based LLM developer tools."
+          - "Collaborated remotely, using Github and Slack to manage project and milestones."
+          - "Learned and implemented best practices for using Typescript, Oclif, mocha, and chai frameworks."
+      - company: "[The Blake Center](https://blakecenter.hillsdale.edu/)"
+        position: Summer Intern
+        location: Hillsdale, MI
+        date: Summers of 2023 and 2024
+        highlights:
+          - "Worked groundskeeping of 100+ acre property, including lawn care, building maintenance, and upgrades."
+          - "Designed and managed audio/visual systems for large events, organizing and documenting A/V technology."
+          - "Coordinated events and performed equipment repairs to ensure smooth operation of the facility."
+      - company: "[Presbyterian Church of Coventry](https://coventrypca.church/)"
+        position: Media Coordinator
+        location: Coventry, CT
+        date: 2021 — 2023
+        highlights:
+          - "Designed custom software for sermon processing, uploading, and slide generation from bulletin scraping."
+          - "Coordinated media technology, weekly operations, volunteers, equipment, communicated with leadership."
+          - "Managed and updated custom Vue-based church website with events, sermons, and regular content updates."
+      - company: Self-Employed
+        position: "[Open-Source Developer](https://github.com/benonymity)"
+        location: Remote
+        date: 2020 — Present
+        highlights:
+          - "Contributing to open-source software and developing various applications for personal use."
+          - "Designing, building, networking, and maintaining a homelab infrastructure with 99% uptime."
+          - "Designing, managing, and hosting over 100 Docker containers in a personal homelab environment."
+      - company: "[Rhetoric in Retrospect](https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect)"
+        position: Podcaster
+        location: Remote
+        date: 2020 — 2022
+        highlights:
+          - "Co-hosted 'Rhetoric in Retrospect' podcast, discussing literature and art through a Christian lens."
+          - "Managed podcast production, including recording, editing, and publishing episodes on a schedule."
+          - "Collaborated with friends to research, write, and edit quality scripts on various topics."
+    publications:
+      - title: "Constraining solar emission radius at 42 MHz during the 2024 Total Solar Eclipse using a student-commissioned radio telescope"
+        authors:
+          - "Olivia Young"
+          - "Timothy Dolch"
+          - "..."
+          - "*Benjamin Bassett*"
+          - "et. al."
+        journal: "Hillsdale College"
+        date: 2024
+        # url: "https://arxiv.org/abs/2402.09459"
+      - title: "[Automating Pulsar Bowshock Discovery]((https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf)"
+        authors:
+          - "*Benjamin Bassett*"
+          - "Timothy Dolch"
+        journal: "Hillsdale College"
+        date: October 2024
+        # url: "https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf"
+    presentations:
+      - title: "[Automating Pulsar Bowshock Discovery]((https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf)"
+        authors:
+          - "Fall 2024 NANOGrav Conference"
+        journal: "Presented novel research on automating the discovery of pulsar bowshocks as part of student presentations in front of the members of the NANOGrav collaboration at the Fall 2024 Conference."
+        date: October 2024
+    volunteer_experience:
+      - company: Impact
+        location: Fairmont, WV
+        position: Volunteer
+        date: 2019, 2022, and 2023
+        highlights:
+          - "Volunteered at [Dayspring Camp](https://dayspringcampwv.com/) for a week-long short term mission trip each summer."
+          - "Served as a young adult leader with the Presbyterian Church of Manchester's youth group."
+          - "Site leader for construction projects to serve the local community, working with a team to complete tasks."
+      - company: Presbyterian Church of Coventry
+        location: Coventry, CT
+        position: Christmas Pageant Pianist
+        date: 2022
+        highlights:
+          - "Served as pianist for the [Christmas pageant](https://www.youtube.com/watch?v=d8-GCevdL-A) orchestra, accompanying the performance with various classic hymns in coordination with the choir and orchestra."
+      - company: Presbyterian Church of Manchester
+        position: Leadership Core
+        location: Manchester, CT
+        date: 2021-2022
+        highlights:
+          - "Served as youth leader in local Youth Group, leading small groups and assisting with event planning."
+          - "Organized games and activities for youth events, fostering engagement and community building."
+          - "Actively invited and interacted with youth, creating a welcoming environment for all participants."
+      - company: Baerfoot Acres Farm
+        location: Tolland, CT
+        position: Farmhand
+        date: 2018 — Present
+        highlights:
+          - "Assisted with farm tasks, including planting, harvesting, wood processing, and animal care."
+          - "Started and operated a chicken flock, selling eggs for profit and learning basic entrepreneurship."
+          - "Worked closely with family and community to maintain and improve farm operations effectively."
+      - company: "[Backyard Shakespeare](https://bys-website.pages.dev/)"
+        location: Bolton, CT
+        position: Actor
+        date: 2017-2022
+        highlights:
+          - "Performed in annual Shakespeare productions, memorizing and delivering extensive dialogue."
+          - "Acted in notable roles including Richard III, King Claudius in Hamlet, and the Dauphin in King John."
+          - "Dedicated four weeks each summer to intensive rehearsals and performances since 2017."
+    projects:
+      - name: "[Personal Website](https://benbassett.dev/)"
+        date: 2023 — Present
+        highlights:
+          - "Designed and developed a personal portfolio website using vanilla HTML, CSS, and JavaScript."
+          - "Implemented a dynamic CV creation system for easy updating of website content and formal PDFs."
+          - "Maintained a 99% uptime website on a custom domain using homelab infrastructure."
+      - name: "[Spotify Buddylist](https://github.com/benonymity/spotify-buddylist)"
+        date: 2022
+        highlights:
+          - "Developed full-stack, Dockerized application in Go and Vue for viewing friend activity on Spotify."
+          - "Reverse-engineered Spotify's API and implemented real-time updates and SQL caching for performance."
+      - name: "[Audiobookshelf](https://github.com/advplyr/audiobookshelf)"
+        date: 2020 — Present
+        highlights:
+          - "Contributes to widely used open-source audiobook server application, mainly in the iOS codebase."
+          - "Collaborates with other developers using Discord and Github to improve the application and discuss plans."
+      - name: "[Church Website](https://coventrypca.church/)"
+        date: 2021 — Present
+        highlights:
+          - "Maintained and updated church website, regularly adding latest recorded sermons and event information."
+          - "Transitioned to custom storage backend from S3 to Google Drive to improve performance and reliability."
+          - "Developed automation software to process sermons and generate slides, decreasing lag time."
+      - name: "[Sermon Upload Automation](https://github.com/Presbyterian-Church-of-Coventry/sermon-api)"
+        date: 2022
+        highlights:
+          - "Developed full-stack system for automating sermon uploads using a Vue frontend and Python in the backend."
+          - "Streamlined process, reducing manual work and improving efficiency using various APIs and automation."
+      - name: "[Dynabead Analysis](https://github.com/benonymity/dynabeads)"
+        date: 2024
+        highlights:
+          - "Developed a GUI application for tracking and analyzing Dynabead movement using OpenCV and Python."
+          - "Created a standalone executable for efficient processing of multiple video files in parallel."
+      - name: "[Pulsar Search Automation](https://github.com/benonymity/pulsar-search)"
+        date: 2023 — Present
+        highlights:
+          - "Developed a GUI application for efficient pulsar bowshock searching using multiple sky surveys."
+          - "Implemented image analysis and sorting algorithms to identify visually interesting pulsar candidates."
+      - name: "[New Years Resolutions](https://github.com/benonymity/resolutions)"
+        date: 2023
+        highlights:
+          - "Developed a small, single page Vue webpage for inspiring better New Year's resolutions."
+      - name: "[Photopage](https://github.com/benonymity/photopage)"
+        date: 2023
+        highlights:
+          - "Created a lightweight, Dockerized, full-stack web application for photo sharing, with a focus on simplicity."
+          - "Hosted it on a private homelab with 99% uptime for displaying photographs on personal website."
+    coursework:
+      - label: Physics
+        details: "PHY-201 (Classical Mechanics), PHY-202 (Electricity and Magnetism, Thermodynamics), PHY-303 (Waves and Oscillations, Optics, Relativity), Saxon Physics (Intro to Physics)"
+      - label: Mathematics
+        details: "MTH-120 (Calculus I), MTH-220 (Calculus II), MTH-320 (Multivariable Calculus), Saxon Math (Algebra, Geometry, Trigonometry, Pre-Calculus, Calculus)"
+      - label: Computer Science
+        details: "CMP-201 (Data Structures), CMP-310 (Algorithms), Self-Taught"
+      - label: English
+        details: "ENG-104 (Great Books in the Western Tradition), ENG-105 (Great Books in the British and American Traditions)"
+      - label: History
+        details: "HST-104 (The Western Heritage to 1600), HST-105 (The American Heritage)"
+      - label: Philosophy
+        details: "PHL-104 (Introduction to Philosophy), The Consequences of Ideas (R. C. Sproul)"
+      - label: Latin
+        details: "Henle Latin I-IV including grammar, syntax, and various literature such as Caesar, Cicero, and Virgil"
+      - label: Speech and Debate
+        details: "Team Policy debates, Lincoln-Douglass debates, NCFCA competitions, Westfield Academy"
+      - label: Music
+        details: "Piano Lessons 2010-present, Choral Bass 2023-present"
+    skills:
+      - label: Programming Languages
+        details: "Python, C++, C, Go, Swift, JavaScript, TypeScript, HTML, CSS, TeX, SQL"
+      - label: Frameworks
+        details: "Vue, OClif, mocha, chai"
+      - label: Software
+        details: "Git, GitHub, Docker, REST API Usage, OAuth2, Linux, Bash, Nginx, WireGuard, vim, tmux"
+      - label: Hardware
+        details: "Vernier Labquest, Raspberry Pi, Arduino, Dell Poweredge, Nvidia CUDA, Hypervisors & Virtualization"
+      - label: Languages
+        details: "English (Native), Latin (Intermediate), Spanish (Beginner)"
+      - label: Other
+        details: "Technical Writing, Public Speaking, Podcasting, Video Editing, Audio Engineering, Piano, Choral Bass, Church Media, A/V Operations"
+    interests:
+      - "Reading or listening to books, playing the piano or guitar, listening to music or podcasts, programming, learning new things, tinkering with electronics, spending time outdoors or on my family's farm, playing board games, doing Rubik's cubes, playing chess, performing Shakespeare, participating in the life of my church, running or biking, writing book reviews, watching movies with friends, and discovering pithy quotes."
+    awards:
+      - "Hillsdale College Dean's List 2023-Present"
+      - "National Latin Exam - Maxima Cum Laude"
+      - "National Merit Scholarship Commended"
+      - "[3rd Place](https://docs.google.com/spreadsheets/d/1uiGvI4H4tr-JkFyenLCoM2CqwLl33QKS/edit?gid=238143979#gid=238143979) (2 person team) at the 2024 Lower Michigan Mathematics Competition"
+    clubs_and_organizations:
+      - label: Hillsdale College
+        details: "Society of Physics Students, Math Competition Team, Swing Dance Club, C. S. Lewis Society, Shakespeare Club, Tower Players, NANOStars, Chess Club"
+      - label: Classical Conversations
+        details: "President and Founder of the Chess Club"
+      - label: Teenpact
+        details: "State Senator Elect of 2022, Debater on House Floor"
+design:
+  theme: engineeringresumes
+  font: Latin Modern Serif
+  font_size: 10pt
+  page_size: letterpaper
+  color: "#004f90"
+  disable_external_link_icons: true
+  disable_page_numbering: false
+  page_numbering_style: NAME — Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: false
+  last_updated_date_style: Last updated in TODAY
+  header_font_size: 30 pt
+  text_alignment: justified
+  seperator_between_connections: ""
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
