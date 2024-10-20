@@ -11,7 +11,13 @@
   margin-right: auto;
   max-width: fit-content;
   text-align: center;
-  gap: 15px;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .filter-list {
+    gap: 5px;
+  }
 }
 
 .filter-item button {
