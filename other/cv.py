@@ -105,12 +105,13 @@ def generate_yaml_by_type(cv_data):
         if 'design' in cv_data:
             filtered_data['design'] = cv_data['design']
 
-        yaml_file = f'yaml/{type_name}.yaml'
+        yaml_file = f'{type_name}.yaml'
         with open(yaml_file, 'w', encoding='utf-8') as file:
             yaml.dump(filtered_data, file, default_flow_style=False, sort_keys=False)
         
         generate_pdf(yaml_file, f'../assets/files/Benjamin Bassett {type_name.capitalize()} CV.pdf')
-    generate_pdf('yaml/cv.yaml', f'../assets/files/Benjamin Bassett CV.pdf')
+        os.remove(yaml_file)
+    generate_pdf('cv.yaml', f'../assets/files/Benjamin Bassett CV.pdf')
 
 def dict_representer(dumper, data):
     return dumper.represent_dict(data.items())
@@ -150,7 +151,7 @@ def run_prettier(file_path):
         print(f"Prettier output: {e.output}")
 
 if __name__ == "__main__":
-    yaml_file = 'yaml/cv.yaml'
+    yaml_file = 'cv.yaml'
     html_file = '../assets/pages/cv.html'
     update_cv(yaml_file, html_file)
     print("CV updated successfully.")
