@@ -20,7 +20,7 @@ function runAllOperations() {
 
   // testimonials variables
   const testimonialsItem = document.querySelectorAll(
-    "[data-testimonials-item]",
+    "[data-testimonials-item]"
   );
   const modalContainer = document.querySelector("[data-modal-container]");
   const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -43,10 +43,10 @@ function runAllOperations() {
       modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
       modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
       modalTitle.innerHTML = this.querySelector(
-        "[data-testimonials-title]",
+        "[data-testimonials-title]"
       ).innerHTML;
       modalText.innerHTML = this.querySelector(
-        "[data-testimonials-text]",
+        "[data-testimonials-text]"
       ).innerHTML;
       testimonialsModalFunc();
     });
@@ -130,14 +130,101 @@ function runAllOperations() {
   });
 
   const iframe = document.getElementById("map-iframe");
-  const currentMonth = new Date().getMonth() + 1;
-  if (currentMonth >= 9 || currentMonth <= 4) {
-    iframe.src =
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47494.14237010853!2d-84.67557343836305!3d41.92760144464611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883d72e59fdc700b%3A0x7b2bb9a774645d37!2sHillsdale%2C%20MI!5e0!3m2!1sen!2sus!4v1722043331437!5m2!1sen!2sus";
-  } else {
-    iframe.src =
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95062.40784442106!2d-72.44354216698476!3d41.87779531833269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6f35d88939d8d%3A0x3b59035b904c52f6!2sTolland%2C%20CT%2006084!5e0!3m2!1sen!2sus!4v1684351063691!5m2!1sen!2sus";
+  if (iframe) {
+    const currentMonth = new Date().getMonth() + 1;
+    if (currentMonth >= 9 || currentMonth <= 4) {
+      iframe.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47494.14237010853!2d-84.67557343836305!3d41.92760144464611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883d72e59fdc700b%3A0x7b2bb9a774645d37!2sHillsdale%2C%20MI!5e0!3m2!1sen!2sus!4v1722043331437!5m2!1sen!2sus";
+    } else {
+      iframe.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95062.40784442106!2d-72.44354216698476!3d41.87779531833269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6f35d88939d8d%3A0x3b59035b904c52f6!2sTolland%2C%20CT%2006084!5e0!3m2!1sen!2sus!4v1684351063691!5m2!1sen!2sus";
+    }
   }
+
+  // timeline filter variables
+  const timelineFilterBtn = document.querySelectorAll(".selector-btn");
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  const timelineSections = document.querySelectorAll(".timeline");
+
+  // Initially show all timeline items
+  timelineItems.forEach((item) => {
+    item.classList.add("show");
+  });
+
+  const timelineFilterFunc = function (selectedCategory) {
+    timelineSections.forEach((section) => {
+      const items = section.querySelectorAll(".timeline-item");
+      let lastVisibleItem = null;
+      let hasVisibleItems = false;
+
+      items.forEach((item, index) => {
+        if (
+          selectedCategory === "all" ||
+          selectedCategory === item.dataset.category ||
+          item.dataset.category.includes("all")
+        ) {
+          item.classList.add("show");
+          item.style.display = "block";
+          lastVisibleItem = item;
+          hasVisibleItems = true;
+
+          // Remove the 'last-visible' class from all items
+          item.classList.remove("last-visible");
+
+          // Restore the connecting line for all items except the last one
+          if (index < items.length - 1) {
+            item.style.setProperty("--timeline-line-display", "block");
+          }
+        } else {
+          item.classList.remove("show");
+          item.style.display = "none";
+          item.style.setProperty("--timeline-line-display", "none");
+        }
+      });
+
+      if (lastVisibleItem) {
+        lastVisibleItem.classList.add("last-visible");
+        lastVisibleItem.style.setProperty("--timeline-line-display", "none");
+      }
+
+      // Hide the entire section if it doesn't have any visible children
+      if (hasVisibleItems) {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  };
+
+  // add event listener to timeline filter buttons
+  timelineFilterBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      let selectedCategory = this.dataset.filter;
+      timelineFilterFunc(selectedCategory);
+
+      timelineFilterBtn.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      // Update download button
+      const downloadBtn = document.querySelector(".download-btn");
+      if (downloadBtn) {
+        const cvTypes = {
+          all: "Full",
+          tech: "Tech",
+          academic: "Academic",
+          music: "Music",
+          other: "Other",
+        };
+        const type = cvTypes[selectedCategory] || "";
+        downloadBtn.href = `/assets/files/Benjamin Bassett${
+          type ? ` ${type}` : ""
+        } CV.pdf`
+          .replace("Full ", "")
+          .trim();
+        downloadBtn.textContent = `Download ${type || ""} CV`.trim();
+      }
+    });
+  });
 }
 
 // Run all operations initially

@@ -16,48 +16,52 @@ function displayGrid() {
   const gridString = preGeneratedGrids[randomIndex];
   const size = Math.floor(Math.sqrt(gridString.length));
   const container = document.getElementById("word-search");
-  container.innerHTML = ""; // Clear previous grid if any
-  const table = document.createElement("table");
+  if (container) {
+    container.innerHTML = ""; // Clear previous grid if any
+    const table = document.createElement("table");
 
-  for (let i = 0; i < size; i++) {
-    const tr = document.createElement("tr");
-    for (let j = 0; j < size; j++) {
-      const td = document.createElement("td");
-      td.textContent = gridString[i * size + j];
-      td.addEventListener("click", () => {
-        if (!td.classList.contains("selected")) {
-          addToDisplay(td.textContent);
-          td.classList.add("selected");
-        } else {
-          removeFromDisplay(td.textContent);
-          td.classList.remove("selected");
-        }
-      });
-      tr.appendChild(td);
+    for (let i = 0; i < size; i++) {
+      const tr = document.createElement("tr");
+      for (let j = 0; j < size; j++) {
+        const td = document.createElement("td");
+        td.textContent = gridString[i * size + j];
+        td.addEventListener("click", () => {
+          if (!td.classList.contains("selected")) {
+            addToDisplay(td.textContent);
+            td.classList.add("selected");
+          } else {
+            removeFromDisplay(td.textContent);
+            td.classList.remove("selected");
+          }
+        });
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
     }
-    table.appendChild(tr);
-  }
-  container.appendChild(table);
+    container.appendChild(table);
 
-  // Call resizeGrid initially and add event listener for window resize
-  resizeGrid();
-  window.addEventListener("resize", resizeGrid);
+    // Call resizeGrid initially and add event listener for window resize
+    resizeGrid();
+    window.addEventListener("resize", resizeGrid);
+  }
 }
 
 function resizeGrid() {
   const wordSearch = document.getElementById("word-search");
-  const table = wordSearch.querySelector("table");
-  const wordSearchWidth = wordSearch.offsetWidth;
-  wordSearch.style.height = `${wordSearchWidth}px`; // Set height equal to width
-  const cells = table.getElementsByTagName("td");
-  const size = Math.sqrt(cells.length);
-  const cellSize = wordSearchWidth / size; // Adjust cellSize calculation
-  for (let cell of cells) {
-    cell.style.width = `${cellSize}px`;
-    cell.style.height = `${cellSize}px`;
-    cell.style.fontSize = `${cellSize * 0.6}px`; // Scale font size relative to cell size
+  if (wordSearch) {
+    const table = wordSearch.querySelector("table");
+    const wordSearchWidth = wordSearch.offsetWidth;
+    wordSearch.style.height = `${wordSearchWidth}px`; // Set height equal to width
+    const cells = table.getElementsByTagName("td");
+    const size = Math.sqrt(cells.length);
+    const cellSize = wordSearchWidth / size; // Adjust cellSize calculation
+    for (let cell of cells) {
+      cell.style.width = `${cellSize}px`;
+      cell.style.height = `${cellSize}px`;
+      cell.style.fontSize = `${cellSize * 0.6}px`; // Scale font size relative to cell size
+    }
+    table.style.fontSize = `${cellSize * 0.6}px`; // Set font size for the entire table
   }
-  table.style.fontSize = `${cellSize * 0.6}px`; // Set font size for the entire table
 }
 
 function addToDisplay(letter) {
@@ -81,8 +85,11 @@ function navigateToLink() {
   window.location.href = `https://${link}.benbassett.dev`; // Navigate to the subdomain
 }
 
-document.getElementById("go-button").style.visibility = "hidden";
-document.getElementById("go-button").addEventListener("click", navigateToLink);
+const goButton = document.getElementById("go-button");
+if (goButton) {
+  goButton.style.visibility = "hidden";
+  goButton.addEventListener("click", navigateToLink);
+}
 
 // Call displayGrid to show a random word search grid when the page loads or when needed
 displayGrid();

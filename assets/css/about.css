@@ -131,6 +131,17 @@
   display: inline-block;
 }
 
+.timeline-item-title a,
+.service-item-title a {
+  color: var(--light-gray-70);
+  display: inline-block;
+}
+
+.timeline-item-title a:hover,
+.service-item-title a:hover {
+  color: var(--light-gray);
+}
+
 .timeline-text a:hover,
 .service-item-text a:hover {
   color: var(--light-gray);

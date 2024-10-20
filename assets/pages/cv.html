@@ -2,6 +2,19 @@
   <header>
     <h2 class="h2 article-title">CV</h2>
   </header>
+  <div class="timeline-selector">
+    <button class="selector-btn active" data-filter="all">All</button>
+    <button class="selector-btn" data-filter="tech">Tech</button>
+    <button class="selector-btn" data-filter="academic">Academic</button>
+    <button class="selector-btn" data-filter="music">Music</button>
+    <button class="selector-btn" data-filter="other">Other</button>
+  </div>
+  <a
+    class="download-btn"
+    href="/assets/files/Benjamin Bassett CV.pdf"
+    target="_blank"
+    >Download Full CV</a
+  >
   <section class="timeline">
     <div class="title-wrapper">
       <div class="icon-box">
@@ -9,39 +22,35 @@
       </div>
       <h3 class="h3">Education</h3>
     </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
+    <ol class="timeline-list" id="education">
+      <li class="timeline-item" data-category="all">
         <h4 class="h4 timeline-item-title">Hillsdale College</h4>
         <span>2023 — Present</span>
         <p class="timeline-text">
-          Currently enrolled as a full-time undergraduate student at
-          <a href="https://www.hillsdale.edu" target="_blank"
-            >Hillsdale College</a
-          >
-          pursuing degrees in physics, math, computer science, and music, and
-          studying anything else I can.
+          Pursuing a BS in Physics and Mathematics with a Computer Science minor
+          at <a href="https://www.hillsdale.edu/">Hillsdale College</a>,
+          focusing on advanced STEM skills and liberal arts education.
         </p>
       </li>
-      <li class="timeline-item">
+      <li class="timeline-item" data-category="all">
         <h4 class="h4 timeline-item-title">Classical Conversations</h4>
         <span>2011 — 2023</span>
         <p class="timeline-text">
-          A graduate of
-          <a href="https://www.classicalconversations.com" target="_blank"
+          Graduated from
+          <a href="https://classicalconversations.com/"
             >Classical Conversations</a
-          >, homeschooled through their curriculum from kindergarten through the
-          end of high school.
+          >, a rigorous classical homeschool program, with comprehensive liberal
+          arts and sciences education.
         </p>
       </li>
-      <li class="timeline-item">
+      <li class="timeline-item" data-category="other">
         <h4 class="h4 timeline-item-title">Teenpact Leadership Schools</h4>
         <span>2013 — 2022</span>
         <p class="timeline-text">
-          A graduate of
-          <a href="https://teenpact.com/" target="_blank"
-            >Teenpact Leadership Schools</a
-          >, Senator Elect of 2021, top of the class 2x. Involved extensive
-          leadership, campaigning, delegation, and public speaking.
+          Excelled in
+          <a href="https://teenpact.com/">Teenpact Leadership Schools</a>,
+          developing strong leadership, public speaking, and policy
+          understanding skills over 9 years.
         </p>
       </li>
     </ol>
@@ -53,62 +62,84 @@
       </div>
       <h3 class="h3">Working Experience</h3>
     </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Intern</h4>
+    <ol class="timeline-list" id="working_experience">
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">
+          Audio/Visual Event Assistant — Hillsdale College
+        </h4>
+        <span>October 2024 — Present</span>
+        <p class="timeline-text">
+          Managed audio/visual aspects of large events, including equipment
+          operation and event coordination.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">
+          Summer Intern — <a href="https://llmzy.ai/">Llmzy</a>
+        </h4>
         <span>Summer 2024</span>
         <p class="timeline-text">
-          Summer software intern at
-          <a href="https://www.llmzy.ai" target="_blank">Llmzy</a>
-          doing foundational work writing and designing the next generation of
-          AI-powered developer tools.
+          Developed backend and tooling for LLM developer tools at
+          <a href="https://llmzy.ai/">Llmzy</a>, using modern frameworks and
+          collaboration tools.
         </p>
       </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Intern</h4>
-        <span>Summer 2024</span>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">
+          Summer Intern —
+          <a href="https://blakecenter.hillsdale.edu/">The Blake Center</a>
+        </h4>
+        <span>Summers of 2023 and 2024</span>
         <p class="timeline-text">
-          Summer internship at
-          <a href="https://blakecenter.hillsdale.edu" target="_blank">
-            The Blake Center for Faith and Freedom</a
-          >
-          involving groundskeeping, audio/visual management, equipment repair,
-          and event coordination.
+          Managed groundskeeping, audio/visual systems, and event coordination
+          for a large property and event center at
+          <a href="https://blakecenter.hillsdale.edu/">The Blake Center</a>.
         </p>
       </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Intern</h4>
-        <span>Summer 2023</span>
-        <p class="timeline-text">
-          Summer internship at
-          <a href="https://blakecenter.hillsdale.edu" target="_blank">
-            The Blake Center for Faith and Freedom</a
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">
+          Media Coordinator —
+          <a href="https://coventrypca.church/"
+            >Presbyterian Church of Coventry</a
           >
-          involving groundskeeping, audio/visual management, equipment repair,
-          and event coordination.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Media Coordinator</h4>
+        </h4>
         <span>2021 — 2023</span>
         <p class="timeline-text">
-          Media Coordinator for the
-          <a href="https://coventrypca.church/about/our-leaders" target="_blank"
+          Developed custom software and managed media technology for
+          <a href="https://coventrypca.church/"
             >Presbyterian Church of Coventry</a
-          >. Responsibilities including website management, designing automation
-          pipelines, and A/V operations and maintenance.
+          >, including website maintenance and content updates.
         </p>
       </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Open-Source Developer</h4>
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">
+          <a href="https://github.com/benonymity">Open-Source Developer</a> —
+          Self-Employed
+        </h4>
         <span>2020 — Present</span>
         <p class="timeline-text">
-          <a href="https://www.github.com/benonymity" target="_blank"
-            >Contributing</a
+          Contributed to open-source projects as an
+          <a href="https://github.com/benonymity">Open-Source Developer</a> and
+          maintained a personal homelab with high uptime and numerous Docker
+          containers.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">
+          Podcaster —
+          <a
+            href="https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect"
+            >Rhetoric in Retrospect</a
           >
-          to open-source software, developing applications for personal use, and
-          designing, building, networking, and maintaining a homelab that hosts
-          over 100 services.
+        </h4>
+        <span>2020 — 2022</span>
+        <p class="timeline-text">
+          Co-hosted and managed production of
+          <a
+            href="https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect"
+            >Rhetoric in Retrospect</a
+          >
+          podcast, handling all aspects from research to publishing.
         </p>
       </li>
     </ol>
@@ -120,49 +151,49 @@
       </div>
       <h3 class="h3">Research Experience</h3>
     </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Summer Research</h4>
+    <ol class="timeline-list" id="research_experience">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Summer Researcher — Hillsdale College
+        </h4>
         <span>Summer 2024</span>
         <p class="timeline-text">
-          Conducted summer research through Hillsdale's
+          Conducted pulsar data research through Hillsdale's
           <a
             href="https://www.hillsdale.edu/hillsdale-blog/academics/what-is-laureates-and-how-do-i-apply/"
-            target="_blank"
             >LAUREATES</a
           >
-          program, writing
-          <a
-            href="https://www.github.com/benonymity/pulsar-search"
-            target="_blank"
-            >software</a
-          >
-          to process and search through pulsar data.
+          program, developed
+          <a href="https://github.com/benonymity/pulsar-search"
+            >processing software</a
+          >, and presented findings at
+          <a href="https://nanograv.org/">NANOGrav</a>'s Fall 2024 Meeting.
         </p>
       </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Physics Research</h4>
-        <span>2024—Present</span>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Research Assistant — Hillsdale College
+        </h4>
+        <span></span>
         <p class="timeline-text">
-          Physics research project at the Hillsdale Lauback Lab, working to
-          analyze the magnetic moment of microscopic beads. Involves novel data
-          processing with Python, MATLAB, and Mathematica.
+          Conducted novel analysis of MyOne Dynabead movement using a
+          <a href="https://github.com/benonymity/dynabeads"
+            >custom Python application</a
+          >, calculated magnetic moments, and learned various scientific
+          computing tools.
         </p>
       </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Physics Research</h4>
-        <span>2023—Present</span>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">Research Assistant — NANOStars</h4>
+        <span>2023 — Present</span>
         <p class="timeline-text">
-          Pulsar research through
-          <a
-            href="https://nanograv.org/resources/resources-undergraduates"
-            target="_blank"
+          Analyzed pulsar candidates, participated in
+          <a href="https://olivia-r-young.github.io/">D-LITE</a> radio telescope
+          construction, and engaged in inter-university
+          <a href="https://nanograv.org/resources/resources-undergraduates"
+            >NANOStars</a
           >
-            the NANOStars collaboration</a
-          >, involving the review, classification, and analysis of hundreds of
-          reprocessed pulsar candidates from the Green Bank and Parkes radio
-          telescopes as well as LoFASM radio telescope construction and solar
-          eclipse observations.
+          discussions on physics and astronomy.
         </p>
       </li>
     </ol>
@@ -174,19 +205,28 @@
       </div>
       <h3 class="h3">Teaching Experience</h3>
     </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Teaching Assistant</h4>
+    <ol class="timeline-list" id="teaching_experience">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Teaching Assistant — Hillsdale College
+        </h4>
         <span>Summer 2024</span>
         <p class="timeline-text">
-          TA at Hillsdale's
+          Served as a Teaching Assistant for Hillsdale College's
           <a
             href="https://www.hillsdale.edu/admissions-aid/high-school-study/summer-science-camps/"
-            target="_blank"
             >Summer Science Camp</a
-          >
-          helping to lead labs, answer questions, and review content for the
-          physics camp in addition to serving as a resident assistant.
+          >, assisting with lab instruction and student support.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Private Mathematics Tutor — Hillsdale College
+        </h4>
+        <span>August 2024 — Present</span>
+        <p class="timeline-text">
+          Mathematics tutor for Calculus I and II, helping students understand
+          and apply advanced mathematical concepts.
         </p>
       </li>
     </ol>
@@ -198,8 +238,32 @@
       </div>
       <h3 class="h3">Publications</h3>
     </div>
-    <ol class="timeline-list">
-      <!-- Add your publications here -->
+    <ol class="timeline-list" id="publications">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Constraining solar emission radius at 42 MHz during the 2024 Total
+          Solar Eclipse using a student-commissioned radio telescope
+        </h4>
+        <span>2024</span>
+        <p class="timeline-text">
+          Participated in a project to observe the Sun during the 2024 Total
+          Solar Eclipse using a student-commissioned radio telescope.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          <a
+            href="(https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf"
+            >Automating Pulsar Bowshock Discovery</a
+          >
+        </h4>
+        <span>October 2024</span>
+        <p class="timeline-text">
+          Presented novel research on automating the discovery of pulsar
+          bowshocks as part of student presentations in front of the members of
+          the NANOGrav collaboration at the Fall 2024 Conference.
+        </p>
+      </li>
     </ol>
   </section>
   <section class="timeline">
@@ -209,19 +273,21 @@
       </div>
       <h3 class="h3">Presentations</h3>
     </div>
-    <ol class="timeline-list">
-      <!-- Add your presentations here -->
-    </ol>
-  </section>
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="trophy-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Awards</h3>
-    </div>
-    <ol class="timeline-list">
-      <!-- Add your awards here -->
+    <ol class="timeline-list" id="presentations">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          <a
+            href="(https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf"
+            >Automating Pulsar Bowshock Discovery</a
+          >
+        </h4>
+        <span>October 2024</span>
+        <p class="timeline-text">
+          Presented novel research on automating the discovery of pulsar
+          bowshocks as part of student presentations in front of the members of
+          the NANOGrav collaboration at the Fall 2024 Conference.
+        </p>
+      </li>
     </ol>
   </section>
   <section class="timeline">
@@ -229,32 +295,145 @@
       <div class="icon-box">
         <ion-icon name="people-outline"></ion-icon>
       </div>
-      <h3 class="h3">Leadership</h3>
+      <h3 class="h3">Volunteering</h3>
     </div>
-    <ol class="timeline-list">
-      <!-- Add your leadership experiences here -->
+    <ol class="timeline-list" id="volunteer_experience">
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Volunteer — Impact</h4>
+        <span>2019, 2022, and 2023</span>
+        <p class="timeline-text">
+          Led youth groups and construction projects during multiple summer
+          mission trips at
+          <a href="https://dayspringcampwv.com/">Dayspring Camp</a>.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="music">
+        <h4 class="h4 timeline-item-title">
+          Christmas Pageant Pianist — Presbyterian Church of Coventry
+        </h4>
+        <span>2022</span>
+        <p class="timeline-text">
+          Served as pianist for the
+          <a href="https://www.youtube.com/watch?v=d8-GCevdL-A"
+            >Christmas pageant</a
+          >
+          orchestra, accompanying the performance with various classic hymns in
+          coordination with the choir and orchestra.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">
+          Leadership Core — Presbyterian Church of Manchester
+        </h4>
+        <span>2021-2022</span>
+        <p class="timeline-text">
+          Led youth groups, planned events, and fostered community engagement as
+          part of the church's Leadership Core.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Farmhand — Baerfoot Acres Farm</h4>
+        <span>2018 — Present</span>
+        <p class="timeline-text">
+          Managed various farm tasks, including animal care and crop management,
+          while learning entrepreneurship through egg sales.
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">
+          Actor —
+          <a href="https://bys-website.pages.dev/">Backyard Shakespeare</a>
+        </h4>
+        <span>2017-2022</span>
+        <p class="timeline-text">
+          Performed leading roles in annual Shakespeare productions for
+          <a href="https://bys-website.pages.dev/">Backyard Shakespeare</a>,
+          dedicating significant time to rehearsals and performances.
+        </p>
+      </li>
     </ol>
   </section>
   <section class="timeline">
     <div class="title-wrapper">
       <div class="icon-box">
-        <ion-icon name="id-card-outline"></ion-icon>
+        <ion-icon name="megaphone-outline"></ion-icon>
       </div>
-      <h3 class="h3">Memberships</h3>
+      <h3 class="h3">Coursework</h3>
     </div>
-    <ol class="timeline-list">
-      <!-- Add your memberships here -->
-    </ol>
-  </section>
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="ribbon-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Certifications</h3>
-    </div>
-    <ol class="timeline-list">
-      <!-- Add your certifications here -->
+    <ol class="timeline-list" id="coursework">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">Physics</h4>
+        <span></span>
+        <p class="timeline-text">
+          PHY-201 (Classical Mechanics), PHY-202 (Electricity and Magnetism,
+          Thermodynamics), PHY-303 (Waves and Oscillations, Optics, Relativity),
+          Saxon Physics (Intro to Physics)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">Mathematics</h4>
+        <span></span>
+        <p class="timeline-text">
+          MTH-120 (Calculus I), MTH-220 (Calculus II), MTH-320 (Multivariable
+          Calculus), Saxon Math (Algebra, Geometry, Trigonometry, Pre-Calculus,
+          Calculus)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">Computer Science</h4>
+        <span></span>
+        <p class="timeline-text">
+          CMP-201 (Data Structures), CMP-310 (Algorithms)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">English</h4>
+        <span></span>
+        <p class="timeline-text">
+          ENG-104 (Great Books in the Western Tradition), ENG-105 (Great Books
+          in the British and American Traditions)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">History</h4>
+        <span></span>
+        <p class="timeline-text">
+          HST-104 (The Western Heritage to 1600), HST-105 (The American
+          Heritage)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Philosophy</h4>
+        <span></span>
+        <p class="timeline-text">
+          PHL-104 (Introduction to Philosophy), The Consequences of Ideas (R. C.
+          Sproul)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Latin</h4>
+        <span></span>
+        <p class="timeline-text">
+          Henle Latin I-IV including grammar, syntax, and various literature
+          such as Caesar, Cicero, and Virgil
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Speech and Debate</h4>
+        <span></span>
+        <p class="timeline-text">
+          Team Policy debates, Lincoln-Douglass debates, NCFCA competitions,
+          Westfield Academy
+        </p>
+      </li>
+      <li class="timeline-item" data-category="music">
+        <h4 class="h4 timeline-item-title">Music</h4>
+        <span></span>
+        <p class="timeline-text">
+          Piano Lessons 2010-present, Twice yearly recitals, Guitar Lessons
+          2021-2023, Choral Bass 2023-present
+        </p>
+      </li>
     </ol>
   </section>
   <section class="timeline">
@@ -264,57 +443,122 @@
       </div>
       <h3 class="h3">Skills</h3>
     </div>
-    <ol class="timeline-list">
-      <!-- Add your skills here -->
+    <ol class="timeline-list" id="skills">
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">Programming Languages</h4>
+        <span></span>
+        <p class="timeline-text">
+          Python, C++, C, Go, Swift, JavaScript, TypeScript, HTML, CSS, TeX, SQL
+        </p>
+      </li>
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">Software</h4>
+        <span></span>
+        <p class="timeline-text">
+          Git, GitHub, Docker, REST API Usage, OAuth2, Linux, Bash, Nginx,
+          WireGuard, vim, tmux
+        </p>
+      </li>
+      <li class="timeline-item" data-category="tech">
+        <h4 class="h4 timeline-item-title">Hardware</h4>
+        <span></span>
+        <p class="timeline-text">
+          Vernier Labquest, Raspberry Pi, Arduino, Dell Poweredge, Nvidia CUDA,
+          Virtualization
+        </p>
+      </li>
+      <li class="timeline-item" data-category="all">
+        <h4 class="h4 timeline-item-title">Languages</h4>
+        <span></span>
+        <p class="timeline-text">
+          English (Native), Latin (Intermediate), Spanish (Beginner)
+        </p>
+      </li>
+      <li class="timeline-item" data-category="music">
+        <h4 class="h4 timeline-item-title">Music</h4>
+        <span></span>
+        <p class="timeline-text">
+          Piano, Guitar, Choral Music, Accompaniment, Sight Reading, Music
+          Theory, Composition, Arranging, Audio Engineering
+        </p>
+      </li>
+      <li class="timeline-item" data-category="all">
+        <h4 class="h4 timeline-item-title">Other</h4>
+        <span></span>
+        <p class="timeline-text">
+          Technical Writing, Public Speaking, Podcasting, Video Editing, Media
+          Coordination, A/V Operations
+        </p>
+      </li>
     </ol>
   </section>
-  <!-- <section class="skill"> -->
-  <!--   <h3 class="h3 skills-title">Proficiencies</h3> -->
-  <!-- -->
-  <!--   <ul class="skills-list content-card"> -->
-  <!--     <li class="skills-item"> -->
-  <!--       <div class="title-wrapper"> -->
-  <!--         <h5 class="h5">Python</h5> -->
-  <!--         <data value="80">80%</data> -->
-  <!--       </div> -->
-  <!-- -->
-  <!--       <div class="skill-progress-bg"> -->
-  <!--         <div class="skill-progress-fill" style="width: 80%"></div> -->
-  <!--       </div> -->
-  <!--     </li> -->
-  <!-- -->
-  <!--     <li class="skills-item"> -->
-  <!--       <div class="title-wrapper"> -->
-  <!--         <h5 class="h5">Vue</h5> -->
-  <!--         <data value="70">65%</data> -->
-  <!--       </div> -->
-  <!-- -->
-  <!--       <div class="skill-progress-bg"> -->
-  <!--         <div class="skill-progress-fill" style="width: 65%"></div> -->
-  <!--       </div> -->
-  <!--     </li> -->
-  <!-- -->
-  <!--     <li class="skills-item"> -->
-  <!--       <div class="title-wrapper"> -->
-  <!--         <h5 class="h5">Go</h5> -->
-  <!--         <data value="90">50%</data> -->
-  <!--       </div> -->
-  <!-- -->
-  <!--       <div class="skill-progress-bg"> -->
-  <!--         <div class="skill-progress-fill" style="width: 50%"></div> -->
-  <!--       </div> -->
-  <!--     </li> -->
-  <!-- -->
-  <!--     <li class="skills-item"> -->
-  <!--       <div class="title-wrapper"> -->
-  <!--         <h5 class="h5">Docker</h5> -->
-  <!--         <data value="50">70%</data> -->
-  <!--       </div> -->
-  <!-- -->
-  <!--       <div class="skill-progress-bg"> -->
-  <!--         <div class="skill-progress-fill" style="width: 70%"></div> -->
-  <!--       </div> -->
-  <!--     </li> -->
-  <!--   </ul> -->
-  <!-- </section> -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="trophy-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Awards</h3>
+    </div>
+    <ol class="timeline-list" id="awards">
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">Hillsdale College Dean's List</h4>
+        <span></span>
+        <p class="timeline-text">2023-Present</p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">National Latin Exam</h4>
+        <span></span>
+        <p class="timeline-text">Maxima Cum Laude</p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">National Merit Scholar</h4>
+        <span></span>
+        <p class="timeline-text">Commended</p>
+      </li>
+      <li class="timeline-item" data-category="academic">
+        <h4 class="h4 timeline-item-title">
+          Lower Michigan Mathematics Competition
+        </h4>
+        <span></span>
+        <p class="timeline-text">
+          <a
+            href="https://docs.google.com/spreadsheets/d/1uiGvI4H4tr-JkFyenLCoM2CqwLl33QKS/edit?gid=238143979#gid=238143979"
+            >3rd Place</a
+          >
+          (2 person team)
+        </p>
+      </li>
+    </ol>
+  </section>
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="id-card-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Clubs and Organizations</h3>
+    </div>
+    <ol class="timeline-list" id="clubs_and_organizations">
+      <li class="timeline-item" data-category="all">
+        <h4 class="h4 timeline-item-title">Hillsdale College</h4>
+        <span></span>
+        <p class="timeline-text">
+          Society of Physics Students, Math Competition Team, Swing Dance Club,
+          C. S. Lewis Society, Shakespeare Club, Tower Players, NANOStars, Chess
+          Club
+        </p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Classical Conversations</h4>
+        <span></span>
+        <p class="timeline-text">President and Founder of the Chess Club</p>
+      </li>
+      <li class="timeline-item" data-category="other">
+        <h4 class="h4 timeline-item-title">Teenpact</h4>
+        <span></span>
+        <p class="timeline-text">
+          State Senator Elect of 2022, Debater on House Floor
+        </p>
+      </li>
+    </ol>
+  </section>
 </article>

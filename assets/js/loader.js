@@ -65,7 +65,7 @@ const links = [
   { href: "./assets/css/contact.css", rel: "stylesheet" },
   { href: "./assets/css/links.css", rel: "stylesheet" },
   { href: "./assets/css/portfolio.css", rel: "stylesheet" },
-  { href: "./assets/css/resume.css", rel: "stylesheet" },
+  { href: "./assets/css/cv.css", rel: "stylesheet" },
   { href: "./assets/css/word-search.css", rel: "stylesheet" },
   { href: "./assets/css/responsive.css", rel: "stylesheet" },
   {
