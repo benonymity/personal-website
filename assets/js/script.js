@@ -141,6 +141,29 @@ function runAllOperations() {
     }
   }
 
+  // Copy quote to clipboard on click
+  const quoteItems = document.querySelectorAll(".quotes-item");
+  const copyPopup = document.getElementById("copy-popup");
+
+  quoteItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const quoteText = this.querySelector("blockquote p").textContent;
+      const author = this.querySelector("cite").textContent;
+      const formattedQuote = `"${quoteText}" - ${author}`;
+      navigator.clipboard
+        .writeText(formattedQuote)
+        .then(() => {
+          copyPopup.classList.add("show");
+          setTimeout(() => {
+            copyPopup.classList.remove("show");
+          }, 2000);
+        })
+        .catch((err) => {
+          console.error("Failed to copy quote: ", err);
+        });
+    });
+  });
+
   // timeline filter variables
   const timelineFilterBtn = document.querySelectorAll(".selector-btn");
   const timelineItems = document.querySelectorAll(".timeline-item");
@@ -222,6 +245,23 @@ function runAllOperations() {
           .replace("Full ", "")
           .trim();
         downloadBtn.textContent = `Download ${type || ""} CV`.trim();
+      }
+    });
+  });
+
+  // Collapsible sections
+  const titleWrappers = document.querySelectorAll(".title-wrapper");
+
+  titleWrappers.forEach((titleWrapper) => {
+    titleWrapper.addEventListener("click", function () {
+      const timelineList = this.nextElementSibling;
+      this.classList.toggle("collapsed");
+      timelineList.classList.toggle("collapsed");
+
+      if (timelineList.classList.contains("collapsed")) {
+        timelineList.style.maxHeight = "0px";
+      } else {
+        timelineList.style.maxHeight = timelineList.scrollHeight + "px";
       }
     });
   });

@@ -15,11 +15,15 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
+  position: relative;
+  cursor: pointer;
 }
 
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
+  transition: max-height 0.3s;
+  overflow: hidden;
 }
 
 .timeline-item {
@@ -66,7 +70,8 @@
 }
 
 .timeline-item:hover::after {
-  animation: bounce-size 0.2s ease infinite alternate;
+  transform: scale(1.3);
+  animation: bounce-size 0.2s ease alternate;
 }
 
 @keyframes bounce-size {
@@ -166,4 +171,22 @@
 
 .timeline-item.last-visible {
   margin-bottom: 0;
+}
+
+.title-wrapper .collapse-icon {
+  color: var(--vegas-gold);
+}
+
+.collapse-icon {
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.title-wrapper.collapsed .collapse-icon {
+  transform: rotate(-90deg);
+}
+
+.timeline-list.collapsed {
+  max-height: 0;
 }
