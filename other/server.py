@@ -13,4 +13,10 @@ def serve_file(path):
         return send_from_directory(parent_dir, 'index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5005)
+    try:
+        app.run(debug=True, host='0.0.0.0', port=5005)
+    except OSError as e:
+        if e.errno == 24:
+            print("Too many open files. Please close some files and try again.")
+        else:
+            raise
