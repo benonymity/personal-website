@@ -265,6 +265,19 @@ function runAllOperations() {
       }
     });
   });
+
+  // Books
+  const bookCards = document.querySelectorAll(".book-card");
+  bookCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const bookTitle = card.querySelector(".book-title").textContent;
+      const searchQuery = encodeURIComponent(bookTitle);
+      window.open(
+        `https://www.thriftbooks.com/browse/?b.search=${searchQuery}`,
+        "_blank"
+      );
+    });
+  });
 }
 
 // Run all operations initially

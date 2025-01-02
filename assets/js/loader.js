@@ -68,6 +68,8 @@ const links = [
   { href: "./assets/css/cv.css", rel: "stylesheet" },
   { href: "./assets/css/word-search.css", rel: "stylesheet" },
   { href: "./assets/css/responsive.css", rel: "stylesheet" },
+  { href: "./assets/css/quotes.css", rel: "stylesheet" },
+  { href: "./assets/css/books.css", rel: "stylesheet" },
   {
     href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap",
     rel: "stylesheet preconnect",

@@ -1,0 +1,133 @@
+/*-----------------------------------*\
+  #QUOTES
+\*-----------------------------------*/
+
+p a {
+  color: var(--light-gray-70);
+  display: inline-block;
+}
+
+p a:hover {
+  color: var(--light-gray);
+}
+
+.quotes .article-title {
+  margin-bottom: 15px;
+}
+
+.quotes-intro {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.quotes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.quotes-item {
+  position: relative;
+  /* background: var(--border-gradient-onyx); */
+  padding: 20px;
+  border-radius: 14px;
+  /* box-shadow: var(--shadow-2); */
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.quotes-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.quotes-item:hover {
+  transform: translateY(-5px);
+}
+
+.quotes-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1023px) {
+  .copy-popup {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 90%;
+    max-height: 40px;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .copy-popup.show {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+.copy-popup {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: var(--fs-7);
+  opacity: 0;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.copy-popup.show {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.quotes-item blockquote {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.quotes-item cite {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  font-style: italic;
+  font-weight: var(--fw-500);
+}
+
+/* @media (min-width: 580px) {
+  .quotes-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .quotes-list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quotes-list {
+    max-width: 100%;
+  }
+} */
