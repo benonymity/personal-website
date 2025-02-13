@@ -33,8 +33,12 @@ function runAllOperations() {
 
   // modal toggle function
   const testimonialsModalFunc = function () {
-    modalContainer.classList.toggle("active");
-    overlay.classList.toggle("active");
+    if (modalContainer) {
+      modalContainer.classList.add("active");
+    }
+    if (overlay) {
+      overlay.classList.add("active");
+    }
   };
 
   // add click event to all modal items
@@ -52,12 +56,23 @@ function runAllOperations() {
     });
   });
 
-  // add click event to modal close button
+  // modal close function
+  const closeModal = function () {
+    if (modalContainer) {
+      modalContainer.classList.remove("active");
+    }
+    if (overlay) {
+      overlay.classList.remove("active");
+    }
+  };
+
+  // add click event to modal close button and overlay
   if (modalCloseBtn) {
-    modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+    modalCloseBtn.addEventListener("click", closeModal);
   }
+
   if (overlay) {
-    overlay.addEventListener("click", testimonialsModalFunc);
+    overlay.addEventListener("click", closeModal);
   }
 
   // custom select variables
