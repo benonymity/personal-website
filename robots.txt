@@ -1,0 +1,9 @@
+# Hi robots! Enjoy your visit.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://benbassett.dev/sitemap.xml
+
+# Disallow specific directories or files if needed
+Disallow: /assets/

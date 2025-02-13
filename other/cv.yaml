@@ -22,7 +22,7 @@ cv:
         degree: BS
         highlights:
           - "Currently enrolled as a full-time undergraduate student at [Hillsdale College](https://www.hillsdale.edu/)."
-          - "Pursuing well-rounded education in the liberal arts and sciences, while making lifelong friends and memories."
+          - "Pursuing well-rounded education in the liberal arts and sciences and cultivating academic excellence."
           - "Developing skills in advanced mathematics, physics, programming, research, and scientific computing."
         summary: "Pursuing a BS in Physics and Mathematics with a Computer Science minor at [Hillsdale College](https://www.hillsdale.edu/), focusing on advanced STEM skills and liberal arts education."
       - institution: Classical Conversations
@@ -88,15 +88,15 @@ cv:
         summary: "Served as a Teaching Assistant for Hillsdale College's [Summer Science Camp](https://www.hillsdale.edu/admissions-aid/high-school-study/summer-science-camps/), assisting with lab instruction and student support."
       - company: Hillsdale College
         type: academic
-        position: Private Mathematics Tutor
+        position: Private Tutor
         date: August 2024 — Present
         highlights:
-          - "Mathematics tutor for Calculus I and II, helping students understand and apply advanced concepts."
-        summary: "Mathematics tutor for Calculus I and II, helping students understand and apply advanced mathematical concepts."
+          - "Tutor for Calculus I-III and most computer science courses, helping students understand and apply advanced concepts."
+        summary: "Tutor for Calculus I-III and most computer science courses, helping students understand and apply advanced concepts."
     working_experience:
       - company: Hillsdale College
         type: other
-        position: Audio/Visual Event Assistant
+        position: "[Audio/Visual Event Assistant](https://hillsdalecollegian.com/2025/02/av-team-the-unsung-heroes-of-hillsdales-events/)"
         location: Hillsdale, MI
         date: October 2024 — Present
         highlights:
@@ -110,8 +110,8 @@ cv:
         location: Remote
         date: Summer 2024
         highlights:
-          - "Designed backend, tests, and tooling for next-gen agent-based LLM developer tools."
-          - "Collaborated remotely, using Github and Slack to manage project and milestones."
+          - "Designed backend, tests, and tooling for next-gen agent-based collaborative LLM developer tools."
+          - "Collaborated remotely, using Github and Slack to coordinate contributions and work towards milestones."
           - "Learned and implemented best practices for using Typescript, Oclif, mocha, and chai frameworks."
         summary: "Developed backend and tooling for LLM developer tools at [Llmzy](https://llmzy.ai/), using modern frameworks and collaboration tools."
       - company: "[The Blake Center](https://blakecenter.hillsdale.edu/)"
@@ -141,8 +141,8 @@ cv:
         date: 2020 — Present
         highlights:
           - "Contributing to open-source software and developing various applications for personal use."
-          - "Designing, building, networking, and maintaining a homelab infrastructure with 99% uptime."
-          - "Designing, managing, and hosting over 100 Docker containers in a personal homelab environment."
+          - "Designing, building, and maintaining a homelab with 99% uptime running over 100 Docker containers."
+          - "Engaging in penetration testing and bug bounty hunting through responsible disclosure programs."
         summary: "Contributed to open-source projects as an [Open-Source Developer](https://github.com/benonymity) and maintained a personal homelab with high uptime and numerous Docker containers."
       - company: "[Rhetoric in Retrospect](https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect)"
         type: other
@@ -155,7 +155,7 @@ cv:
           - "Collaborated with friends to research, write, and edit quality scripts on various topics."
         summary: "Co-hosted and managed production of [Rhetoric in Retrospect](https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect) podcast, handling all aspects from research to publishing."
     publications:
-      - title: "Constraining solar emission radius at 42 MHz during the 2024 Total Solar Eclipse using a student-commissioned radio telescope"
+      - title: "[Constraining solar emission radius at 42 MHz during the 2024 Total Solar Eclipse using a student-commissioned radio telescope](https://arxiv.org/abs/2412.07034)"
         type: academic
         authors:
           - "Olivia Young"
@@ -163,9 +163,8 @@ cv:
           - "..."
           - "*Benjamin Bassett*"
           - "et. al."
-        journal: "Hillsdale College"
-        date: 2024
-        # url: "https://arxiv.org/abs/2402.09459"
+        journal: "The Astrophysical Journal"
+        date: December 2024
         summary: "Participated in a project to observe the Sun during the 2024 Total Solar Eclipse using a student-commissioned radio telescope."
       - title: "[Automating Pulsar Bowshock Discovery]((https://benbassett.dev/assets/files/pulsar_bowshock_discovery.pdf)"
         type: academic
@@ -294,13 +293,13 @@ cv:
     coursework:
       - label: Physics
         type: academic
-        details: "PHY-201 (Classical Mechanics), PHY-202 (Electricity and Magnetism, Thermodynamics), PHY-303 (Waves and Oscillations, Optics, Relativity), Saxon Physics (Intro to Physics)"
+        details: "PHY-201 (Classical Mechanics), PHY-202 (Electricity and Magnetism, Thermodynamics), PHY-303 (Waves and Oscillations, Optics, Relativity), PHY-304 (Quantum Mechanics), Saxon Physics (Intro to Physics)"
       - label: Mathematics
         type: academic
-        details: "MTH-120 (Calculus I), MTH-220 (Calculus II), MTH-320 (Multivariable Calculus), Saxon Math (Algebra, Geometry, Trigonometry, Pre-Calculus, Calculus)"
+        details: "MTH-120 (Calculus I), MTH-220 (Calculus II), MTH-320 (Multivariable Calculus), MTH-310 (Linear Algebra), Saxon Math (Algebra, Geometry, Trigonometry, Pre-Calculus, Calculus)"
       - label: Computer Science
         type: tech
-        details: "CMP-201 (Data Structures), CMP-310 (Algorithms)"
+        details: "CMP-201 (Data Structures), CMP-310 (Algorithms), CMP-355 (Cybersecurity)"
       - label: English
         type: other
         details: "ENG-104 (Great Books in the Western Tradition), ENG-105 (Great Books in the British and American Traditions)"
@@ -328,10 +327,10 @@ cv:
       #   details: "Vue, OClif, mocha, chai"
       - label: Software
         type: tech
-        details: "Git, GitHub, Docker, REST API Usage, OAuth2, Linux, Bash, Nginx, WireGuard, vim, tmux"
+        details: "Linux, Git, GitHub, Docker, API Usage, Websockets, OAuth2, Bash, Nginx, WireGuard, Neovim, tmux"
       - label: Hardware
         type: tech
-        details: "Vernier Labquest, Raspberry Pi, Arduino, Dell Poweredge, Nvidia CUDA, Virtualization"
+        details: "Vernier Labquest, Flipper Zero, Raspberry Pi, Arduino, Dell Poweredge, Nvidia CUDA, Virtualization"
       - label: Languages
         type: all
         details: "English (Native), Latin (Intermediate), Spanish (Beginner)"
@@ -342,7 +341,7 @@ cv:
         type: all
         details: "Technical Writing, Public Speaking, Podcasting, Video Editing, Media Coordination, A/V Operations"
     interests:
-      - "Reading or listening to books, playing the piano or guitar, listening to music or podcasts, programming, learning new things, tinkering with electronics, spending time outdoors or on my family's farm, playing board games, doing Rubik's cubes, playing chess, performing Shakespeare, participating in the other of my church, running or biking, writing book reviews, watching movies with friends, and discovering pithy quotes."
+      - "Reading or listening to books, playing the piano or guitar, listening to music or podcasts, programming, learning new things, tinkering with electronics, spending time outdoors or on my family's farm, playing board games, doing Rubik's cubes, playing chess, performing Shakespeare, participating in the other of my church, running or biking, writing book reviews, watching movies with friends, and collectinh pithy quotes."
     awards:
       - label: "Hillsdale College Dean's List"
         type: academic
@@ -355,7 +354,7 @@ cv:
         details: "Commended"
       - label: Lower Michigan Mathematics Competition
         type: academic
-        details: "[3rd Place](https://docs.google.com/spreadsheets/d/1uiGvI4H4tr-JkFyenLCoM2CqwLl33QKS/edit?gid=238143979#gid=238143979) (2 person team)"
+        details: "[3rd Place](https://docs.google.com/spreadsheets/d/1uiGvI4H4tr-JkFyenLCoM2CqwLl33QKS/edit?gid=238143979#gid=238143979) (2 person team) out of 17 teams"
     clubs_and_organizations:
       - label: Hillsdale College
         type: all
@@ -374,12 +373,10 @@ design:
   color: "#004f90"
   disable_external_link_icons: true
   disable_page_numbering: false
-  page_numbering_style: NAME — Page PAGE_NUMBER of TOTAL_PAGES
   disable_last_updated_date: false
-  last_updated_date_style: Last updated in TODAY
   header_font_size: 30 pt
   text_alignment: justified
-  seperator_between_connections: ""
+  separator_between_connections: ""
   use_icons_for_connections: true
   margins:
     page:
