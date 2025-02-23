@@ -141,7 +141,7 @@ cv:
         date: 2020 — Present
         highlights:
           - "Contributing to open-source software and developing various applications for personal use."
-          - "Designing, building, and maintaining a homelab with 99% uptime running over 100 Docker containers."
+          - "Designed, built, and is maintaining a homelab with 99% uptime running over 100 Docker containers."
           - "Engaging in penetration testing and bug bounty hunting through responsible disclosure programs."
         summary: "Contributed to open-source projects as an [Open-Source Developer](https://github.com/benonymity) and maintained a personal homelab with high uptime and numerous Docker containers."
       - company: "[Rhetoric in Retrospect](https://podcasters.spotify.com/pod/show/rhetoric-in-retrospect)"
@@ -355,6 +355,9 @@ cv:
       - label: Lower Michigan Mathematics Competition
         type: academic
         details: "[3rd Place](https://docs.google.com/spreadsheets/d/1uiGvI4H4tr-JkFyenLCoM2CqwLl33QKS/edit?gid=238143979#gid=238143979) (2 person team) out of 17 teams"
+      - label: William Lowell Putnam Math Competition
+        type: academic
+        details: Ranked in the top 2,400 undergraduate mathematics students in the United States among participants in this highly competitive examination.
     clubs_and_organizations:
       - label: Hillsdale College
         type: all
